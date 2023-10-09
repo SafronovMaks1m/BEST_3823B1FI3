@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-
 int QuadraticEquation(double a, double b, double c){
     int d, x1, x2;
     d = b*b-4*a*c;
