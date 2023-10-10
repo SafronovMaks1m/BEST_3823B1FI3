@@ -15,4 +15,5 @@ int QuadraticEquation(double a, double b, double c){
         x1 = -b/(2*a);
         return rint(x1*2);
     }
+
 }
