@@ -1,50 +1,26 @@
 #include <stdbool.h>
-#include <stdio.h>
-#include <ctype.h>
+
 
 bool is_digit(char x) {
-    int i;
-    for (int i = 48; i<58; i++){
-        if (putchar(i) == x){
-            return true;}}}
+    if (x >= 48 && x <= 57){
+    return true;}
+    return false; 
+}
 
 bool is_letter(char x) {
-    int i;
-    for (int i = 65; i<91; i++){
-        if (putchar(i) == x){
-            return 1;}}
-    for (int i = 97; i<123; i++){ 
-        if (putchar(i) == x){
-            return 1;}}}
+    if ((x >= 65 && x <= 90) || (x >= 97 && x <= 122)){
+    return true;}
+    return false; 
+}
 
 bool is_punctuation(char x) {
-    int i;
-    for (int i = 0; i<48; i++){
-        if (putchar(i) == x){
-            return 1;}}
-    for (int i = 58; i<65; i++){
-        if (putchar(i) == x){
-            return 1;}}
-    for (int i = 91; i<97; i++){
-        if (putchar(i) == x){
-            return 1;}}
-    for (int i = 123; i<128; i++){
-        if (putchar(i) == x){
-            return 1;}}}
-
+    if ((x >= 33 && x <= 47) || (x >= 58 && x <= 64) || (x >= 91 && x <= 96) || (x >= 123 && x <= 126)){
+    return true;}
+    return false; 
+}
 
 int get_ascii_code(char first, char second, char third) {
-    int num, i, j;
-    int chisla[3] = {0, 0, 0};
-    char mas[3] = {first, second, third};
-    for (j = 0; j<3; j++){
-        for (int i = 0; i<128; i++){
-            if (putchar(i) == mas[j]){
-                chisla[j] = i;
-                break;}}
-    for (i = 0; i<3; i++){
-        if (i == 0){
-            num = chisla[i];}
-        else if (i>10){
-            num = num*1000+chisla[i];}}
-    return num;}}
+    int num; 
+    num = (first * 1000000) + (second * 1000) + third;
+    return num; 
+}
