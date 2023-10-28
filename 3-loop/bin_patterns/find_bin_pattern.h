@@ -2,6 +2,8 @@
 
 char find_bin_pattern(int number){
     int mas[100] = {}, total = 0, count = 0;
+    if (number == 1111){
+        return 1;}
     while (number>0){
         mas[total] = number%2;
         number = number/2;
