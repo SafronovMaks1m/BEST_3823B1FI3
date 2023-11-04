@@ -24,4 +24,5 @@ for (int i = 1; i<100000000; i++){
             total+=1;}
     if (total == order){
         return i;}
-    total = 0;}}
+    total = 0;}
+}
