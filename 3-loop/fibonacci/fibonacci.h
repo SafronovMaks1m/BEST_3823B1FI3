@@ -8,6 +8,4 @@ long fib(int m){
         f1 = f0;
         f0 = prom;}
     return sum-prom;}
-    return -1;
-    
-}
+    return -1;}

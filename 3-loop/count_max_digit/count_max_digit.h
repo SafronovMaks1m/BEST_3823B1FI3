@@ -1,5 +1,6 @@
 #include <math.h>
-
+#include <stdlib.h>
+#include <stdio.h>
 char count_max_digit(long long number){
     int max = -1000, mas[100] = {}, total = 0;
     if (number<0){
