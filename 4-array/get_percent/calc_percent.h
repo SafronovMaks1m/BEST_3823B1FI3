@@ -1,6 +1,7 @@
 #include <math.h>
 int calc_percent(int matrix[], int size){
     int max = -100000, min = 1000000, total = 0;
+    
     for (int i = 0; i<size; i++){
         if (matrix[i]>max){
             max = matrix[i];}

@@ -1,5 +1,6 @@
 int maxmin(int input[], int size){
     int max = -10000;
+    
     for (int i = 0; i<size; i++){
         if (i == 0){
             if (input[i+1]>input[i]){
