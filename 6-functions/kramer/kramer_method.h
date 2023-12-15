@@ -83,7 +83,7 @@ int det(int* matrix, int* vector,int size){
 
 double kramer_method(int* matrix, int* vector, int size){
 
-    int s = sizeof(matrix)/4;
+    int s = size*size;
     if (s == 4){
         return det_2(matrix, vector, s);}
     else if (s == 9){
