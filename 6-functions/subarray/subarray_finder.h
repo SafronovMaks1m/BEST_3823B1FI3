@@ -23,4 +23,5 @@ int find_subarray(int* array, int array_size, int* subarray1, int subarray_size1
     int result = 0;
     result+= search_massiv(array, array_size, subarray1, subarray_size1); result+= search_massiv(array, array_size, subarray2, subarray_size2); result+= search_massiv(array, array_size, subarray3, subarray_size3);
     return result;
+    
 }

@@ -8,4 +8,5 @@ void get_max_min(int* array, int size, int* pMax, int* pMin){
         if (array[i]<*pMin)
             *pMin = array[i];
     }
+
 }

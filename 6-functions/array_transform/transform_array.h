@@ -45,4 +45,5 @@ void transform(double* array, int size, int* comands, int comands_count){
         else if (comands[i] == 5)
             e(array, size);
         else
-            f(array, size);}}
+            f(array, size);}
+}
