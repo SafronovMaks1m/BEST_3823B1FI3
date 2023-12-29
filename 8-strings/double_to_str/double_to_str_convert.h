@@ -53,4 +53,5 @@ char* convert(double number){
         mas[i] =  (char)((sclok%10)+48); sclok/=10; count-=1;}
     mas[i] = '\0';
     return mas;
+    
 }
